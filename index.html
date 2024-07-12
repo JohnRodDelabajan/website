@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="sample.css">
+    <llnk href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#home" class="logo">John Rod <span>Delabajan</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html" onclick="showAlert_logout()">Log Out</a>
+        </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>John Rod</span></h1>
+            <h3 class="student">and I'm a <span>BSITWMA Student</span></h3>
+            <p>Full Name: John Rod Codilan Delabajan<br>
+               Birthdate: March 1, 2004<br>
+               School: FEU Institute of Technology<br>
+               Section: TW05
+            </p>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="Profile.jpg" alt="">
+        </div>
+    </section>
+    <!-- End of Home -->
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2011 - 2017</div>
+                <div class="timeline-content">
+                    <h3>Elementary</h3>
+                    <p>Fiore Del Carmelo School <a target="_blank" href="https://www.google.com/maps/place/Fiore+Del+Carmelo+School/@14.682132,121.0985124,13z/data=!4m6!3m5!1s0x3397ba75d02a66b1:0x9e9c80c7506e6ff!8m2!3d14.7076616!4d121.0843503!16s%2Fg%2F1hf9g5x1z?entry=ttu"><i class='bx bxs-map'></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017 - 2021</div>
+                <div class="timeline-content">
+                    <h3>Junior High School</h3>
+                    <p><a target="_blank" href="https://www.google.com/maps/place/National+College+of+Business+and+Arts/@14.705871,121.068024,15z/data=!4m6!3m5!1s0x3397b099e27b1f87:0x92d408001975fb88!8m2!3d14.705871!4d121.068024!16s%2Fg%2F124swkktx?entry=ttu"><i class='bx bxs-map'></i></a>National College of Business and Arts</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 - 2023</div>
+                <div class="timeline-content">
+                    <h3>Senior High School</h3>
+                    <p>Technological Institute of the Philippines <a target="_blank" href="https://www.google.com/maps/place/Technological+Institute+of+the+Philippines+-+Quezon+City/@14.6257638,121.0617218,15z/data=!4m6!3m5!1s0x3397b796aecb8763:0xaa026ea7350f82e7!8m2!3d14.6257638!4d121.0617218!16s%2Fg%2F11xcs9xd5?entry=ttu"><i class='bx bxs-map'></i></a></p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - Present</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p><a target="_blank" href="https://www.google.com/maps/place/FEU+Institute+of+Technology/@14.604119,120.9886247,15z/data=!4m6!3m5!1s0x3397c9f8b14eb259:0xad4d12caac9a068e!8m2!3d14.604119!4d120.9886247!16zL20vMDkyanNw?entry=ttu"><i class='bx bxs-map'></i></a>FEU Institute of Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Education -->
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest Projects</h2>
+        <div class="services-box">
+            <div class="services-info">
+                <a href="design.html" onclick="showAlert()"><h4>UX/UI Design</h4></a>
+            </div>
+        </div>
+        <br>
+        <div class="services-box">
+            <div class="services-info">
+                <a href="webdesign.html" onclick="showAlert()"><h4>Web Design</h4></a>
+            </div>
+        </div>
+        <br>
+        <div class="services-box">
+            <div class="services-info">
+                <a href="canva.html" onclick="showAlert()"><h4>Canva</h4></a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Projects -->
+
+    <!-- Hobbies -->
+    <section class="hobbies" id="hobbies">
+        <div class="hobbies-box">
+            <h2 class="heading">Hobbies</h2>
+            <div class="wrapper">
+                <div class="hobbies-item">
+                    <img src="hobbies.jpeg" alt="">
+                    <h2>Computer</h2>
+                    <h3>Rating my skills:</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                </div>
+                <div class="hobbies-item">
+                    <img src="hobbies2.jpeg" alt="">
+                    <h2>Basketball</h2>
+                    <h3>Rating my skills:</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                </div>
+                <div class="hobbies-item">
+                    <img src="hobbies3.jpeg" alt="">
+                    <h2>Billiards</h2>
+                    <h3>Rating my skills:</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Hobbies -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="contact">
+            <div class="social">
+                <a href="https://github.com/JohnRodDelabajan/Rod.git" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/johnrod.delabajan" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/jrodcdlbjn_/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="www.tiktok.com/@ykrodddd" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="list">
+            <li><a href="#home">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">
+            John Rod Delabajan | For School Activity Purpose Only | All rights reserved.
+        </p>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

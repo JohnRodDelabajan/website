@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <a href="#" class="logo">John Rod Delabajan's <span>Portfolio</span></a>
+        </div>
+        <form class="login-form" onsubmit="return validateLogin()">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'admin' && password === 'password') {
+                alert('Login successful!');
+                window.location.href = 'sample.html'; // Redirect to sample.html
+                return false; // Prevent form submission
+            } else {
+                alert('Invalid username or password');
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>
